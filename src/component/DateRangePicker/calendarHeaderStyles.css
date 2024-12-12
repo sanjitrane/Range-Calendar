@@ -1,0 +1,87 @@
+.calendar-header {
+  display: flex;
+  position:relative;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.controls {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button {
+  background: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  padding:4px;
+}
+
+.controls .arrow{
+  background: lightgray;
+  border-radius: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.controls button:hover{
+  background: lightblue;
+}
+
+.controls .today-btn{
+  background-color: lightblue;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.month-display button, .year-display button {
+  background: none;
+  border: none;
+  font-size: 14px;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+
+.month-display .month-name{
+  width:100px;
+  border-radius: 4px;
+  margin:2px;
+}
+
+.month-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  padding: 10px;
+  background-color: #fff;
+  position: absolute;
+  top: 50px; 
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.month-grid button {
+  padding: 10px;
+  background: #f4f4f4;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.month-grid button:hover {
+  background: lightblue;
+}
+
+.year-display .year{
+  font-size: 14px;
+  width:100px;
+  padding: 4px 10px;
+}
+

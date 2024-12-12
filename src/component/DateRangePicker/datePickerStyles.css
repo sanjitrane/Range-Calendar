@@ -1,0 +1,62 @@
+.calendar{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap:4px;
+}
+
+.calendar.hide{
+  visibility:hidden;
+}
+.calendar.show{
+  visibility:visible;
+}
+
+.calendar button{
+  width:40px;
+  height:40px;
+  text-align: center;
+  border:none;
+  border-radius: 4px;
+  background-color: white;
+  font-size: 1em;
+  transition: 0.3s ease;
+  
+}
+
+.calendar button.isActive:hover{
+  background-color: #3498ff;
+}
+
+.calendar button.isSelected{
+  background-color: #3498ff;
+  color: white;
+}
+
+.calendar button.isDisabled{
+  color:gray;
+  cursor: default;
+  background-color: white;
+}
+
+.calendar button.isActive{
+  color:black;
+  cursor:pointer;
+}
+
+.calendar button.isCurrent{
+  border: 1px solid lightblue;
+}
+
+.predefined-ranges button{
+  background-color: lightgray;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+.predefined-ranges button:nth-child(odd){
+  margin-right:4px;
+}
+
+.predefined-ranges button:hover{
+  background-color: lightblue;
+}
